@@ -11,15 +11,19 @@
 	</parent>
 
 	<groupId>myABC</groupId>
-	<artifactId>core.iot.admin</artifactId>
+	<artifactId>core.iot.sensor_breach.analyzer</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>core.iot.admin</name>
+	<name>core.iot.sensor_breach.analyzer</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
 
 	<dependencies>
 
@@ -65,18 +69,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!-- Maven plugin to use perticular java version to compile code -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
 		</plugins>
-
-		<finalName>core.iot.admin</finalName>
+		<finalName>core.iot.sensor_breach.analyzer</finalName>
 	</build>
 </project>
